@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DRA_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+<!-- App-Name -->
+    <TextView
+        android:id="@+id/textView_app_name_long_label"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_long"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+    />
+<!-- Dateneingabe im Tabellenlayout -->
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+    
+<!-- Startdaten (Datum, Zeit, Jetzt-Button, Kilometer) --> 
+<!-- zuerst die Labels -->
+    <TableRow>
+        <TextView
+            android:text="@string/start_date"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/start_time"
+            android:padding="3dip" />
+        <TextView
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/start_milage"
+            android:padding="3dip" />
+    </TableRow>
+<!-- jetzt die Eingabefelder bzw. den Button -->
+    <TableRow>
+        <EditText
+        android:id="@+id/editText_start_date"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:inputType="date" >
+        <requestFocus />
+    </EditText>
+<!-- Startzeit -->    
+    <EditText
+        android:id="@+id/editText_start_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="time" >
+    </EditText>
+<!-- jetzt Knopf Startzeit -->
+    <Button
+        android:id="@+id/button_now_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now" />
+<!-- Start-Kilometer -->
+    <EditText
+        android:id="@+id/editText_start_milage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    </TableRow>
+
+    
+<!-- Endedaten (Datum, Zeit, Jetzt-Button, Kilometer) --> 
+<!-- zuerst die Labels -->
+    <TableRow >
+        <TextView
+            android:text="@string/stop_date"
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/stop_time"
+            android:padding="3dip" />
+        <TextView
+            android:padding="3dip" />
+        <TextView
+            android:text="@string/stop_milage"
+            android:padding="3dip" />
+    </TableRow>
+<!-- jetzt die Eingabefelder bzw. den Button -->
+    <TableRow>
+        <EditText
+        android:id="@+id/editText_stop_date"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:inputType="date" >
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/editText_stop_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="time" >
+    </EditText>
+<!-- jetzt Knopf Stopzeit -->
+    <Button
+        android:id="@+id/button_now_stop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now" />
+<!-- Stop-Kilometer -->
+    <EditText
+        android:id="@+id/editText_stop_milage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    </TableRow>
+    
+</TableLayout>
+
+<!-- Ziel -->
+    <TextView
+        android:id="@+id/textView_travel_to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel_to" 
+    />
+    <EditText
+        android:id="@+id/editText_travel_to"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="text" >
+    </EditText>
+<!-- Reisegrund -->    
+    <TextView
+        android:id="@+id/textView_travel_why_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel_why" 
+    />
+    <EditText
+        android:id="@+id/editText_travel_why"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="text" >
+    </EditText>
+<!-- email senden Knopf -->
+    <Button
+        android:id="@+id/button_send_email"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_email" />   
+	    
+</LinearLayout>

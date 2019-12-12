@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DRA</string>
+    <string name="app_name_long">Dienstreiseabrechnung</string>
+    <string name="start_time">Startzeit</string>
+    <string name="start_date">Startdatum</string>
+    <string name="stop_time">Endezeit</string>
+    <string name="stop_date">Endedatum</string>
+    <string name="start_milage">Startkilometer</string>
+    <string name="stop_milage">Endekilometer</string>
+    <string name="travel_to">Wohin</string>
+    <string name="travel_why">Warum</string>
+    <string name="send_email">email senden</string>
+    <string name="now">jetzt</string>
+    <item name="DRA_Layout" format="integer" type="id">5</item>
+    <item name="textView_app_name_long_label" format="integer" type="id">10</item>
+    <item name="textView_start_date_label" format="integer" type="id">20</item>
+    <item name="editText_start_date" format="integer" type="id">25</item>
+    <item name="textView_start_time_label" format="integer" type="id">30</item>
+    <item name="editText_start_time" format="integer" type="id">35</item>
+    <item name="textView_start_milage_label" format="integer" type="id">40</item>
+    <item name="editText_start_milage" format="integer" type="id">45</item>
+    <item name="textView_stop_date_label" format="integer" type="id">50</item>
+    <item name="editText_stop_date" format="integer" type="id">55</item>
+    <item name="textView_stop_time_label" format="integer" type="id">60</item>
+    <item name="editText_stop_time" format="integer" type="id">65</item>
+    <item name="textView_stop_milage_label" format="integer" type="id">70</item>
+    <item name="editText_stop_milage" format="integer" type="id">75</item>
+    <item name="textView_travel_to_label" format="integer" type="id">80</item>
+    <item name="editText_travel_to" format="integer" type="id">85</item>
+    <item name="textView_travel_why_label" format="integer" type="id">90</item>
+    <item name="editText_travel_why" format="integer" type="id">95</item>
+    <item name="button_send_email" format="integer" type="id">99</item>
+    <item name="button_now_start" format="integer" type="id">37</item>
+    <item name="button_now_stop" format="integer" type="id">67</item>
+    
+</resources>
